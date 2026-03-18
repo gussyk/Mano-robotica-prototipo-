@@ -1,3 +1,5 @@
+
+#librerias
 from machine import Pin, PWM
 from time import sleep
 
@@ -5,13 +7,14 @@ from time import sleep
 
 
 
-
+#definicion de los servos 
 servo1 = PWM(Pin(17), freq=50)#indice
-servo2 = PWM(Pin(26), freq=50)
-servo3 = PWM(Pin(12), freq=50)
-servo4 = PWM(Pin(14), freq=50)
-servo5 = PWM(Pin(15), freq=50)
+servo2 = PWM(Pin(26), freq=50)#medio
+servo3 = PWM(Pin(12), freq=50)#anular
+servo4 = PWM(Pin(14), freq=50)#menique
+servo5 = PWM(Pin(15), freq=50)#pulgar
 
+#bucle de prueba
 while True:
     lista = input("ingrese la lista")
     if lista[0] == "1":
