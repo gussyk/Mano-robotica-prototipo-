@@ -91,9 +91,9 @@ while True:
   
 
 
-    cv2.imshow("Frame", frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-     break
+    cv2.imshow("Frame", frame) #Muestra el video con las manos detectadas
+    if cv2.waitKey(1) & 0xFF == ord('q'): #Si se presiona la tecla 'q', se sale del bucle
+     break  #Libera la cámara y cierra las ventanas
     
 
     
